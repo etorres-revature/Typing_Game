@@ -3,7 +3,7 @@ const wordEl = document.querySelector("#word");
 const textEl = document.querySelector("#text");
 const scoreEl = document.querySelector("#score");
 const timeEl = document.querySelector("#time");
-const endGameEl = document.querySelector("#end-game");
+const endGameEl = document.querySelector("#end-game-container");
 const settingBtn = document.querySelector("#settings-btn");
 const settingEl = document.querySelector("#settings");
 const settingFormEl = document.querySelector("#settings-form");
@@ -46,6 +46,12 @@ let score = 0;
 //initialize time
 let time = 10;
 
+//focus on text input on start
+textEl.focus();
+
+//start counting down
+const timeInterval = setInterval(updateTime, 1000);
+
 //get a random word from array
 function getRandomWord() {
   return words[Math.floor(Math.random() * words.length)];
@@ -64,6 +70,28 @@ function updateScore(){
     scoreEl.innerHTML = score;
 }
 
+//update time
+function updateTime() {
+    time--;
+    timeEl.innerHTML = time + "s";
+
+    if (time === 0) {
+        clearInterval(timeInterval);
+        //end game
+        gameOver();
+    }
+}
+
+//game over/show end screen
+function gameOver() {
+endGameEl.innerHTML = `
+<h1>TIME RAN OUT!!</h1>
+<p>Your final score: ${score}</p>
+<button onclick="location.reload()">Play Again</button>
+`;
+endGameEl.style.display = "flex"
+}
+
 addWordToDOM();
 
 
@@ -74,10 +102,14 @@ textEl.addEventListener("input", e => {
     if (insertedText === randomWord) {
         //add new random word to DOM
         addWordToDOM();
+        //update score
         updateScore();
+
         //clear
         e.target.value = ""
-        //update score
-        s
+        
+        time += 5;
+
+        updateTime();
     }
 });
