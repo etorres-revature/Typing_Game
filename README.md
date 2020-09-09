@@ -24,7 +24,7 @@ The game has three difficulty settings :
 
 The cog button at the bottom of the screen uses JavaScript and CSS animation to ease the difficulty select on and off the screen.
 
-![TYPING GAME difficulty](./assets/images/screenshots/typing=game-difficulty.png)
+![TYPING GAME difficulty](./assets/images/screenshots/typing-game-difficulty.png)
 
  Please enjoy the [Typing Game](https://etorres-revature.github.io/Typing_Game/).  E-mail me with any feature update suggestions.
 
