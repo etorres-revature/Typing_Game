@@ -1,8 +1,8 @@
 # [Typing Game](https://etorres-revature.github.io/Typing_Game/)
 
- The [Typing Game](https://etorres-revature.github.io/Typing_Game/) app challenges you to type in words presented on screen.  Users can choose your difficulty level.  For every word typed correctly, the user will get more time on the clock.  Harder difficulty levels will put on less time.  When time runs out the game is over. 
+ The [Typing Game](https://etorres-revature.github.io/Typing_Game/) app challenges you to type in words presented on screen.  Users can choose the difficulty level.  For every word typed correctly, the user will get more time on the clock.  Harder difficulty levels will put on less time.  When time runs out the game is over. 
 
- ## GAME PLAY
+ ## :game_die: GAME PLAY :game_die:
 
  When the game starts the score is set to "0" and the clock is at "10s".
 
@@ -24,9 +24,9 @@ The game has three difficulty settings :
 
 The cog button at the bottom of the screen uses JavaScript and CSS animation to ease the difficulty select on and off the screen.
 
-![TYPING GAME difficulty](./assets/images/screenshots/typing=game-difficulty.png0)
+![TYPING GAME difficulty](./assets/images/screenshots/typing=game-difficulty.png)
 
- Please enjoy the [Typing Game](https://etorres-revature.github.io/Typing_Game/)).  E-mail me with any feature update suggestions.
+ Please enjoy the [Typing Game](https://etorres-revature.github.io/Typing_Game/).  E-mail me with any feature update suggestions.
 
 ### :computer: Technologies Used :computer:
 
